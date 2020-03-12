@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <div id="sidebar">
+      <div class="entry">
+        <span class="name">Maseczki chirurgiczne</span>
+        <div>
+          <span class="price">120PLN</span>
+          <button class="pure-button button-error delete">delete</button>
+        </div>
+      </div>
+      <div class="spacer"></div>
+      <div class="delete-all">delete all</div>
+    </div>
+    <div id="main">
+      <div id="product_id">
+        <input type="text"
+          placeholder="kod produktu">
+      </div>
+      <div class="bottom">        
+        <div class="row">
+          <button class="pure-button button-success state">otwarta</button>
+          <button class="pure-button button-warning state">oststni klient</button>
+          <button class="pure-button button-error state">zamknięta</button>
+          <button class="pure-button button-error state">halp</button>
+        </div>
+        <div class="row">
+          <button class="pure-button button-error function">wyloguj</button>
+          <button class="pure-button button-secondary function">torba</button>
+          <button class="pure-button button-secondary function">wiele</button>
+        </div>
+        <div class="row">
+          <span id="sum"></span>
+          <button class="pure-button button-success pay">zapłać kartą</button>
+          <button class="pure-button button-success pay">zapłać gotówką</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./scripts.js"></script>
+</body>
+</html>
