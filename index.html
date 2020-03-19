@@ -10,13 +10,7 @@
 <body>
   <div id="app">
     <div id="sidebar">
-      <div class="entry">
-        <span class="name">Maseczki chirurgiczne</span>
-        <div>
-          <span class="price">120PLN</span>
-          <button class="pure-button button-error delete">delete</button>
-        </div>
-      </div>
+      <div id="entries"></div>
       <div class="spacer"></div>
       <div class="delete-all">delete all</div>
     </div>
@@ -24,23 +18,35 @@
       <div id="product_id">
         <input type="text"
           placeholder="kod produktu">
+        <div id="dropdown">
+          <div class="prop">
+            <span class="prop_kod">10</span>
+            <span class="prop_name">Przedmiot ABCD</span>
+            <span class="prop_cena">50 PLN</span>
+          </div>
+          <div class="prop">
+            <span class="prop_kod">10</span>
+            <span class="prop_name">Przedmiot ABCD</span>
+            <span class="prop_cena">50 PLN</span>
+          </div>
+        </div>
       </div>
       <div class="bottom">        
         <div class="row">
-          <button class="pure-button button-success state">otwarta</button>
-          <button class="pure-button button-warning state">oststni klient</button>
-          <button class="pure-button button-error state">zamknięta</button>
-          <button class="pure-button button-error state">halp</button>
+          <div class="big-button button-success state">otwarta</div>
+          <div class="big-button button-warning state">oststni klient</div>
+          <div class="big-button button-error state">zamknięta</div>
+          <div class="big-button button-error state">halp</div>
         </div>
         <div class="row">
-          <button class="pure-button button-error function">wyloguj</button>
-          <button class="pure-button button-secondary function">torba</button>
-          <button class="pure-button button-secondary function">wiele</button>
+          <div class="big-button button-error function">wyloguj</div>
+          <div class="big-button button-secondary function">torba</div>
+          <div class="big-button button-secondary function">wiele</div>
         </div>
         <div class="row">
           <span id="sum"></span>
-          <button class="pure-button button-success pay">zapłać kartą</button>
-          <button class="pure-button button-success pay">zapłać gotówką</button>
+          <div class="big-button button-success pay">zapłać kartą</div>
+          <div class="big-button button-success pay">zapłać gotówką</div>
         </div>
       </div>
     </div>
